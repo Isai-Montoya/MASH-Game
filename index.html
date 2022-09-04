@@ -1,87 +1,52 @@
-<link href='https://fonts.googleapis.com/css?family=Homemade+Apple|Fredericka+the+Great' rel='stylesheet' type='text/css'>
-    <title>MASH</title>
-	
-</head>
-    <body>
-	 
-      
-<button onclick="start_mash()">Start Game</button>
-<button id="changebackground" onclick="change_background()">Change Background</button>
-      <h1 id="mash_title"></h1>
-	  <div id="mash_house">
-	  <p>M.A.S.H.</p>
-	  <ol >
-	  <li><strong>M</strong>ansion</li>
-	  <li><strong>H</strong>ouse</li>
-	  <li><strong>A</strong>partment</li>
-	  <li><strong>S</strong>hack</li>
-	  </ol>
-	  </div>
-	  <div id="marriagetext">
-	  <p>Marriage</p>
-	  <ol >
-	  <li></li>
-	  <li></li>
-	  <li></li>
-	  <li></li>
-	  </ol>
-	  </div>
-	  
-	  <div id="occupationtext">
-	  <p>Occupation</p>
-	  <ol >
-	  <li></li>
-	  <li></li>
-	  <li></li>
-	  <li></li>
-	  </ol>
-	  </div>
-	  
-	   <div id="transportationtext">
-	  <p>Transportation</p>
-	  <ol >
-	  <li></li>
-	  <li></li>
-	  <li></li>
-	  <li></li>
-	  </ol>
-	  </div>
-	  
-	   <div id="moneytext">
-	  <p>Money</p>
-	  <ol >
-	  <li></li>
-	  <li></li>
-	  <li></li>
-	  <li></li>
-	  </ol>
-	  </div>
-	  
-	  <div id="petstext">
-	  <p>Pets</p>
-	  <ol >
-	  <li></li>
-	  <li></li>
-	  <li></li>
-	  <li></li>
-	  </ol>
-	  </div>
-	  
-	  <div id="placestext">
-	  <p>Places</p>
-	  <ol >
-	  <li></li>
-	  <li></li>
-	  <li></li>
-	  <li></li>
-	  </ol>
-	  </div>
-	  <div id="futurebutton">
-	  <button onclick="mash_results()">Calculate your future!</button>
-	  </div>
-	  <div id="future">
-	  </div>
+<!DOCTYPE html>
+<html>
 
-  
+  <!-- HEAD SECTION STARTS -->
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=0.5, maximum-scale=0.5, minimal-ui">
+    <title>MASH GAME</title>
+    <link href="" rel="stylesheet">
+    <link href="" rel="stylesheet">
+  </head>
+  <!-- HEAD SECTION ENDS -->
 
-</body>
+  <!-- BODY SECTION STARTS -->
+  <body>
+    <h1>MASH</h1>
+    <p class="description">Fill in the blanks and your future will be foretold.</p>
+    <form action="" method="post" id="mash">
+      <div id="answers" class="hide">
+        <p>Your home is in <span id="answer_1"></span> with a <span id="answer_3"></span> as you are a <span id="answer_2"></span> who owns a <span id="home"></span>.
+      </div>
+      <div class="bucket">
+        <div class="choice-bucket">
+          <h4 class="highlight">Where will you live?</h4>
+          <input name="answer_1[]">
+          <input name="answer_1[]">
+          <input name="answer_1[]">
+          <input name="answer_1[]">
+        </div>
+        <div class="choice-bucket">
+          <h4 class="highlight">Your future profession?</h4>
+          <input name="answer_2[]">
+          <input name="answer_2[]">
+          <input name="answer_2[]">
+          <input name="answer_2[]">
+        </div>
+        <div class="choice-bucket">
+          <h4 class="highlight">What's your future pet?</h4>
+          <input name="answer_3[]">
+          <input name="answer_3[]">
+          <input name="answer_3[]">
+          <input name="answer_3[]">
+        </div>
+      </div>
+      <button type="submit" class="button-submit">Tell my fortune</button>
+    </form>  
+    <script src=""></script>
+  </body>
+  <!-- BODY SECTION ENDS -->
+  <!-- 2021 New Course -->
+
+</html>
